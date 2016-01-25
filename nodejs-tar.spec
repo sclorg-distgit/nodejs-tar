@@ -3,8 +3,8 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:       %{?scl_prefix}nodejs-tar
-Version:    1.0.3
-Release:    1.sc1%{?dist}
+Version:    2.2.1
+Release:    1%{?dist}
 Summary:    Tar for Node.js
 License:    BSD
 Group:      System Environment/Libraries
@@ -39,9 +39,12 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %{nodejs_sitelib}/tar
-%doc README.md examples LICENCE
+%doc README.md examples LICENSE
 
 %changelog
+* Mon Nov 30 2015 Tomas Hrcka <thrcka@redhat.com> - 2.2.1-1
+- New upstream release
+
 * Fri Jan 09 2015 Tomas Hrcka <thrcka@redhat.com> - 1.0.3-1
 - New upstream release 1.0.3
 
